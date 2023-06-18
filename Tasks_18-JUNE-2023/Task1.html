@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise#2 - Ragestration Form</title>
+</head>
+<body>
+    <h1>Ragestration Form!</h1>
+    <div style="border: 1px dotted black; width: 500px; height: 325px; padding-left: 20px;" >
+        <h3>Personal details</h3>
+        <hr><br>
+        <form action="" method="post">  
+            <label for="Name" title="First Name Field">First name:
+            <input type="text" name="Name" id="Name" size="25" required>
+            <br><br>
+            <label for="lName" title="Last Name Field">Last name:
+            <input type="text" name="Name" id="lName" size="25" required>
+            <br><br>
+            <label for="Email" title="Email Field">Email:</label>
+            <input type="email" id="Email" name="Email" size="25" required >
+            <br><br>
+            <label for="Gender" title="Gender Field">Gender:</label>
+            <input type="radio" id="option1" name="radioval" value="Male">
+            <label for="option1">Male</label>
+            <input type="radio" id="option2" name="radioval" value="Female">
+            <label for="option2">Female</label>
+            <br><br>
+            <label for="City" title="City Field">City:</label>
+            <select>
+                <option value="Amman" selected>Amman</option>
+                <option value="Irbid">Irbid</option>
+                <option value="Aqaba">Aqaba</option>
+            </select>
+            <br><br>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+    
+</body>
+</html>

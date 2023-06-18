@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Interests Survey form</title>
+</head>
+<body>
+    <div align="center">
+
+        <h1>Employee Interests Survey form</h1>
+        <form action="" method="post">
+            <label for="Name" title="Your Name Field">Enter your name:</label>
+            <input type="text" name="Name" id="Name" size="25" required>
+            <br><br>
+            <label for="dName" title="Last Name Field">Enter your department:</label>
+            <input type="text" name="dName" id="dName" size="25" required>
+            <br><br>
+            <label for="aboutyou" title="AboutYou Field">Tell us a little about yourself:</label>
+            <textarea name="aboutyou" id="aboutyou" cols="25" rows="5"></textarea>
+            <br><br>
+            <label for="DO" title="DO Field">Do you exercise at home?</label>
+            <input type="radio" id="option1" name="radioval" value="Yes">
+            <label for="option1">Yes</label>
+            <input type="radio" id="option2" name="radioval" value="No">
+            <label for="option2">No</label>
+            <br><br>
+            <label for="How" title="How Field">How do you like to read about your favorite topics?</label>
+            <br><br>
+            <label for="checkbox" title="Field">Your favorite programming langauge :</label><br><br>
+            <input type="checkbox" id="val1"  value="Books">
+            <label for="val1">Books</label>
+            <input type="checkbox" id="val2"  value="Online resources">
+            <label for="val2">Online resources</label>
+            <input type="checkbox" id="val3"  value="Phone apps">
+            <label for="val3">Phone apps</label>
+            <input type="checkbox" id="val4"  value="Magazines">
+            <label for="val4">Magazines</label>
+            <br><br>
+            <label for="What" title="What Field">What genre of movies do you like?</label>
+            <select>
+                <option value="Comedy" selected>Comedy</option>
+                <option value="Action">Action</option>
+                <option value="Kids">Kids</option>
+            </select>
+            <br><br>
+            <button type="submit">Submit form</button>
+        </form>
+
+    </div>
+    
+</body>
+</html>

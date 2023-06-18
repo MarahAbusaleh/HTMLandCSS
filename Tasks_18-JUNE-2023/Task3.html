@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Form</title>
+</head>
+<body>
+    <h1>Basic HTML Form</h1>
+        <form action="" method="post">
+            <fieldset>
+                <legend><b>Name</b></legend>
+                <br>
+                <label for="Name" title="First Name Field">First Name</label><br>
+                <input type="text" name="Name" id="Name" size="25" required>
+                <br><br>
+                <label for="lName" title="Last Name Field">Last Name</label><br>
+                <input type="text" name="Name" id="lName" size="25" required>
+                <br><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend><b>Other Qusetions</b></legend>
+                <br>
+                <label for="Drink" title="Drink Field">Choose a drink:</label><br>
+                <input type="radio" id="option1" name="radioval" value="coffee">
+                <label for="option1">coffee</label><br>
+                <input type="radio" id="option2" name="radioval" value="tea" checked>
+                <label for="option2">tea</label><br>
+                <input type="radio" id="option2" name="radioval" value="hot chocolate">
+                <label for="option2">hot chocolate</label><br>
+                <br><br>
+                <label for="ice" title="ice Field">What ice cream do you like?</label><br>
+                <input type="checkbox" id="val1"  value="Chocolate">
+                <label for="val1">Chocolate</label><br>
+                <input type="checkbox" id="val2"  value="Chocolate Pudding">
+                <label for="val2">Chocolate Pudding</label><br>
+                <input type="checkbox" id="val3"  value="Chocolate Peanut Butter" checked>
+                <label for="val3">Chocolate Peanut Butte</label><br>
+                <input type="checkbox" id="val4"  value="Vanilla">
+                <label for="val4">Vanilla</label><br>
+                <input type="checkbox" id="val5"  value="Strawberry">
+                <label for="val5">Strawberry</label><br>
+                <br><br>
+                <label for="school" title="school Field">Select a school:</label><br>
+                <select>
+                    <option value="Harvard" selected>Harvard</option>
+                    <option value="Omariyah">Omariyah</option>
+                </select>
+                <br><br>
+                <label for="comments" title="comments Field">Please provide comments:</label><br>
+                <textarea name="aboutyou" id="aboutyou" cols="25" rows="5"></textarea>
+            </fieldset>
+        </form>
+        <br>
+        <button type="submit">Submit</button>
+    
+</body>
+</html>
