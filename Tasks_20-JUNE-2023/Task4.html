@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise#4</title>
+    <style>
+        .main{
+            border: 2px dotted black;
+            width: 412px;
+        }
+
+        .displayInlineBlock{
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+
+        #static{
+            background-color: green;
+            position: static;
+        }
+
+        #relative{
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background-color: green;
+        }
+
+        #absolutemain{
+            position: relative;
+            width: 308px;
+
+        }
+
+        #absolute{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <p>position: static</p>
+    <div class="main">
+        <span class="displayInlineBlock">One</span>
+        <span class="displayInlineBlock" id="static">Two</span>
+        <span class="displayInlineBlock">Three</span>
+        <span class="displayInlineBlock">Four</span>
+    </div>
+    <p>position: relative</p>
+    <div class="main">
+        <span class="displayInlineBlock">One</span>
+        <span class="displayInlineBlock" id="relative">Two</span>
+        <span class="displayInlineBlock">Three</span>
+        <span class="displayInlineBlock">Four</span>
+    </div>
+    <p>position: absolute</p>
+    <div class="main" id="absolutemain">
+        <span class="displayInlineBlock">One</span>
+        <span class="displayInlineBlock" id="absolute">Two</span>
+        <span class="displayInlineBlock">Three</span>
+        <span class="displayInlineBlock">Four</span>
+    </div>
+    
+</body>
+</html>
