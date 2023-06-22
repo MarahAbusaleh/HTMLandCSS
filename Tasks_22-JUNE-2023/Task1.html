@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise#1</title>
+    <style>
+        .main{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            height: 100%;
+            width: 100%;
+            gap: 10px 5px;
+        }
+        .GreenColor{
+            background-color: #b0d748;
+            grid-column: 1/4;
+            height: 250px;
+        }
+        
+        .BlueColor{
+            background-color: #00c1d2;
+            height: 280px;
+        }
+
+        .mainGray{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            column-gap: 10px;
+            grid-column: 1/4;
+
+        }
+        .GrayColor{
+            background-color: #e7eef0;
+            height: 230px;
+        }
+        
+        @media screen and (max-width:768px) and (min-width:481px) {
+            .main{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                height: 100%;
+                width: 100%;
+                gap: 10px 5px;
+            }
+            .GreenColor{
+                background-color: #b0d748;
+                grid-column: 1/4;
+                height: 140px;
+            }
+            
+            .BlueColor{
+                background-color: #00c1d2;
+                grid-column: 1/4;
+                height: 105px;
+            }
+
+            .mainGray{
+                display: grid;
+                grid-template-columns: auto auto;
+                gap: 10px 20px;
+
+            }
+            .GrayColor{
+                background-color: #e7eef0;
+                height: 80px;
+            }             
+            
+        }
+
+        @media screen and (max-width:480px) {
+            .main{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 5px;
+                height: 100%;
+                width: 100%;
+            }
+            .GreenColor{
+                background-color: #b0d748;
+                height: 70px;
+            }
+
+            .BlueColor{
+                background-color: #00c1d2;
+                height: 100px;
+            }
+            
+            .mainGray{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+            .GrayColor{
+                background-color: #e7eef0;
+                height: 50px;             
+            } 
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="GreenColor"></div>
+        
+        <div class="BlueColor"></div>
+        <div class="BlueColor"></div>
+        <div class="BlueColor"></div> 
+
+        <div class="mainGray">
+
+            <div class="GrayColor"></div>
+            <div class="GrayColor"></div>
+            <div class="GrayColor"></div>
+            <div class="GrayColor"></div>
+
+        </div>
+    </div>
+</body>
+</html>

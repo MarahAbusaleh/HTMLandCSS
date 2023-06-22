@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise#2</title>
+    <style>
+        .main{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto auto auto auto;
+            height: 100%;
+            width: 100%;
+            gap: 10px 5px;
+        }
+
+        .Nav{
+            background-color: #16d5ef;
+            height: 100px;
+            width: 100%;
+            grid-column: 1/4;
+        }
+
+        .Left{
+            background-color: #ff7e47;
+            display: flex;
+            flex-direction: column;
+            height: 530px;
+            gap: 10px;
+            padding-top: 10px;
+            width: 300px;
+
+        }
+        .LeftSide{
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: white;
+            height: 40px;
+            width: 280px;
+        }
+        
+        .Middle{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: left;
+
+        }
+        .Mid{
+            background-color: #dfdfdf;
+            height: 100px;
+            width: 925px;
+        }
+
+        .RightSide{
+            background-color: #2cda72;
+            height: 540px;
+            width: 180px;
+        }        
+
+        @media screen and (min-width: 461px)  and (max-width: 768px){
+            .main{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-template-rows: auto auto auto auto auto auto auto auto;
+                height: 100%;
+                width: 100%;
+                gap: 10px 5px;
+            }
+
+            .Nav{
+                background-color: #16d5ef;
+                height: 110px;
+                width: 100%;
+                grid-column: 1/4;
+            }
+
+            .Left{
+                background-color: #ff7e47;
+                grid-column: 1/4;
+                display: flex;
+                flex-direction: row;
+                height: 50px;
+                width: 100%;
+                gap: 10px;
+                padding-top: 10px;
+                
+            }
+            .LeftSide{
+                margin-left: 10px;
+                margin-right: 10px;
+                background-color: white;
+                height: 40px;
+                width: 280px;
+            }
+            
+            .Mid{
+                background-color: #dfdfdf;
+                grid-column: 1/4;
+                height: 90px;
+                width: 1230px; /*why whe I change to width=100% disappear*/
+            }
+
+            .RightSide{
+                background-color: #2cda72;
+                grid-column: 1/4;
+                height: 110px;
+                width: 100%;
+            }                      
+        }
+
+        @media screen and (max-width: 460px){
+            .main{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-template-rows: auto auto auto auto auto auto auto auto;
+                height: 100%;
+                width: 100%;
+                gap: 10px 5px;
+            }
+
+            .Nav{
+                background-color: #16d5ef;
+                height: 120px;
+                width: 100%;
+                grid-column: 1/4;
+            }
+
+            .Left{
+                background-color: #ff7e47;
+                grid-column: 1/4;
+                display: flex;
+                flex-direction: column;
+                height: 260px;
+                width: 100%;
+                gap: 10px;
+                
+            }
+            .LeftSide{
+                background-color: white;
+                height: 55px;
+                width: 470px;
+            }
+            
+            .Mid{
+                background-color: #dfdfdf;
+                grid-column: 1/4;
+                height: 90px;
+                width: 480px;
+            }
+
+            .RightSide{
+                background-color: #2cda72;
+                grid-column: 1/4;
+                height: 120px;
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="main">
+
+        <div class="Nav"></div>
+
+        <div class="Left">
+
+            <div class="LeftSide"></div>
+            <div class="LeftSide"></div>
+            <div class="LeftSide"></div>   
+            <div class="LeftSide"></div> 
+
+        </div>          
+
+        <div class="Middle">
+
+            <div class="Mid"></div>
+            <div class="Mid"></div>
+            <div class="Mid"></div>
+            <div class="Mid"></div>
+            <div class="Mid"></div>
+
+        </div>
+
+        <div class="RightSide"></div>
+
+    </div>
+    
+</body>
+</html>
