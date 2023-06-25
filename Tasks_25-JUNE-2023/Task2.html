@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise#2</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            border-radius: 10px;
+            animation-name: task2;
+            animation-duration: 12s;
+            position: relative;
+            left: 200px;
+            top: 0px;
+        }
+
+        @keyframes task2 {
+            
+            0%{left: 200px;top: 0px; background-image: linear-gradient(green, green);}
+            6.25%{left: 400px;top: 0; background-image: linear-gradient(green, cyan);}
+            12.5%{left: 400px;top: 200px; background-image: linear-gradient(cyan, blue);}
+            25%{left: 400px;top: 400px; background-image: linear-gradient(cyan, blue);}
+            37.5%{left: 200px;top: 400px; background-image: linear-gradient(blue, yellow);}
+            50%{left: 0;top: 400px; background-image: linear-gradient(yellow, orange);}
+            62.5%{left: 0;top: 200px; background-image: linear-gradient(orange, red);}
+            75%{left: 0;top: 0; background-image: linear-gradient(orange, red);}
+            87.5%{left: 0;top: 0; background-image: linear-gradient(red, green);}
+            100%{left: 100px;top: 0px; background-image: linear-gradient(red, green);}
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
